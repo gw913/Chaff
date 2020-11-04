@@ -44,10 +44,22 @@ sum_sq <- function(df, measure, group) {
 }
 
 sum_sq(chaff2, mass, sex)
+
+#summarising data
+chaff_summary <- chaff2 %>% 
+  group_by(sex) %>%
+  summarise(mean_index = mean(mass),
+            n = length(mass),
+            sd = sd(mass),
+            se = sd/sqrt(n))
+str(chaff_summary)
+#create a function
 ```
 
 #Results 
-The difference in masses by sex.
+The difference in masses by sex. The *SS(x)* values for *females* is **86.8320**, whilst for *males* it is **87.8975**.
+Summary of data shows a *mean* of **20.48** for *females* and **22.28** for *males*. *standard deviation* for *males* is **2.15**  and *standard error* of **0.481**. 
+*Females* have a *standard deviation* of **2.14** and a *standard error* of **0.478**.
 
 #Discussion
 What are the implications of this difference.

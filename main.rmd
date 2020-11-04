@@ -1,0 +1,29 @@
+---
+title: "Main"
+author: "Grace Woodhouse"
+date: "04/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.retina = 3)
+```
+
+```{r packages}
+library(tidyverse)
+```
+
+#Introduction
+Comparison of mass between male and female Chaffs.
+
+#Methods
+Tidy the data and calculate averages.
+
+#Results 
+The difference in masses by sex.
+
+#Discussion
+What are the implications of this difference.

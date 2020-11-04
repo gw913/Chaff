@@ -22,6 +22,30 @@ Comparison of mass between male and female Chaffs.
 #Methods
 Tidy the data and calculate averages.
 
+```{r}
+#read in data
+file <- read.table("chaff.txt", header = TRUE)
+
+#tidy the data
+write.table(file,
+quote = FALSE,
+row.names = FALSE)
+
+# library tidyverse 
+library(tidyverse)
+chaff2 <- pivot_longer(data = file, cols = everything(),
+                       names_to = "sex", values_to = "mass")
+str(chaff2)
+
+#calculate SS(x)
+sum_sq <- function(df, measure, group) {
+  df %>% group_by ({{ group }}) %>% 
+    summarise(ss = sum(({{measure}} - mean({{measure}}))^2))
+}
+
+sum_sq(chaff2, mass, sex)
+```
+
 #Results 
 The difference in masses by sex.
 

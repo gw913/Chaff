@@ -3,6 +3,7 @@ title: "Main"
 author: "Grace Woodhouse"
 date: "04/11/2020"
 output: html_document
+bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +18,7 @@ library(tidyverse)
 ```
 
 #Introduction
-Comparison of mass between male and female Chaffs.
+Comparison of mass between male and female Chaffs. The average mass of chaffinches is 24g [@noauthor_undated-ne]. Ornithologists have studied chaffinches for hundreds of years [@Turner_undated-jq]. They are even found in places such as the Canary Islands [@GarciaDelRey2005-da]. 
 
 #Methods
 Tidy the data and calculate averages.
@@ -71,3 +72,5 @@ Summary of data shows a *mean* of **20.48** for *females* and **22.28** for *mal
 
 #Discussion
 *Males* are heavier than *females*.
+
+#References 

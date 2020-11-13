@@ -21,7 +21,16 @@ library(tidyverse)
 ```
 
 #Introduction
-Comparison of mass between male and female Chaffs. The average mass of chaffinches is 24g [@noauthor_undated-ne]. Ornithologists have studied chaffinches for hundreds of years [@Turner_undated-jq]. They are even found in places such as the Canary Islands [@GarciaDelRey2005-da]. 
+Comparison of mass between male and female Chaffs. The average mass of chaffinches is 24g [@noauthor_undated-ne]. Ornithologists have studied chaffinches for hundreds of years [@Turner_undated-jq]. They are even found in places such as the Canary Islands [@GarciaDelRey2005-da].
+The males of the species are more colourful than the females. See Figure \@ref(fig:male-fig.)
+
+(ref:male-fig) The males are very colourful. By Andreas Trepte. https://en.wikipedia.org/wiki/Common_chaffinch#/media/File:Chaffinch_(Fringilla_coelebs).jpg 
+
+```{r male-fig, out.height="200px", fig.cap='(ref:male-fig)'}
+knitr::include_graphics("pics/male.jpg")
+```
+
+
 
 #Methods
 Tidy the data and calculate averages.
